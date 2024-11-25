@@ -1,0 +1,12 @@
+{
+    '0': 'broken',
+    '1': 'cover',
+    '2': 'deficiency',
+    '3': 'flashover',
+    '4': 'grading ring',
+    '5': 'lightning-rod-suspension',
+    '6': 'nest',
+    '7': 'polymer-insulator-upper-shackle',
+    '8': 'vari-grip',
+    '9': 'yoke-suspension'
+}

@@ -1,2 +1,6 @@
 /database/power_db.db
 /.env
+/model_handlers/robustness/Datasets/elec_test_cln/
+/model_handlers/robustness/test/Attack_generation/
+/model_handlers/robustness/test/temp/
+/model_handlers/robustness/Models/UserModel/model/

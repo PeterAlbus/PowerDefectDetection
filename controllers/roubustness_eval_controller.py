@@ -1,10 +1,11 @@
 from flask import Blueprint, request, jsonify
-# from services.model1_service import Model1Service
+
+from services.robustness_eval_service import RobustnessEvalService
 
 robustness_bp = Blueprint('robustness', __name__)
 
+robustness_service = RobustnessEvalService()
 
-# model1_service = Model1Service()
 
 @robustness_bp.route('/dict', methods=['GET'])
 def dict_test():
@@ -17,5 +18,11 @@ def dict_test():
 
 @robustness_bp.route('/list', methods=['GET'])
 def list_test():
-    result = ['1','c']
+    result = ['1', 'c']
     return result
+
+
+@robustness_bp.route('/eval', methods=['GET'])
+def eval_robustness():
+    robustness_service.eval_robustness({})
+    return {}
